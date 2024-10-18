@@ -57,7 +57,7 @@ global.hituet = 0
 
 //bot sett
 //________________________________________________________________________________________________________
-global.typemenu = process.env.MENU_DESIGN || 'v2' // menu type 'v1' => 'v2'
+global.typemenu = process.env.MENU_DESIGN || 'v2' // menu type 'v1' => 'v2' => Only v1 is supported on iPhones
 //________________________________________________________________________________________________________
 global.typereply = process.env.REPLY_TYPE || 'v2' // reply type 'v1' => 'v3'
 //________________________________________________________________________________________________________
@@ -75,7 +75,6 @@ global.adminevent = process.env.ANNOUNCE_MSG  || false //show promote/demote mes
 //________________________________________________________________________________________________________
 global.groupevent = process.env.GROUP_ANNOUNCE_MSG || false //show update messages in group chat
 //________________________________________________________________________________________________________
-global.antidelete = false //set anti delete
 //________________________________________________________________________________________________________
 
 //msg
