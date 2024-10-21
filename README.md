@@ -98,7 +98,7 @@
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><b>Xploader Bot</b></a> Can be deployed on;
 </p>
 <p align="center">
-  <a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Dark-Xploit%2FXPLOADER-BOT"><img src="https://img.shields.io/badge/heroku-430098?style=for-the-badge&logo=heroku&logoColor=FFFFFF"></a>
+  <a href="https://dashboard.heroku.com/new?template="><img src="https://img.shields.io/badge/heroku-430098?style=for-the-badge&logo=heroku&logoColor=FFFFFF"></a>
 <p align="center">
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
 <p align="center">
