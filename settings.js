@@ -34,7 +34,7 @@ global.ownername = process.env.SUDO_NAME || 'Tylor' //ur owner name
 //________________________________________________________________________________________________________
 global.websitex = process.env.YT_LINK || "https://youtube.com/@heyits_tylor"
 //________________________________________________________________________________________________________
-global.wagc = process.env.GL_PUSH || "https://www.instagram.com/heyits_tylor?igsh=YzljYTk1ODg3Zg=="
+global.wagc = process.env.GL_PUSH || "https://chat.whatsapp.com/B6Hk3829WHYChdpqnuz7bL"
 //________________________________________________________________________________________________________
 global.themeemoji = process.env.GL_EMOJI || '🌚'
 //________________________________________________________________________________________________________
