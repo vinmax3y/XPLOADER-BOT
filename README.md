@@ -91,8 +91,8 @@
 * Go to `src>data>role>owner.json` and enter your number.
 * Edit your details at `settings.js` (optional)
 * Create an heroku account if you don't have.
-* Copy the url below:
->* https://dashboard.heroku.com/new?template=
+>* Copy the url below:
+```https://dashboard.heroku.com/new?template= ```
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><b>Xploader Bot</b></a> Can be deployed on;
