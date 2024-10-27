@@ -22,21 +22,12 @@
 <p align="center"><img src="https://profile-counter.glitch.me/{Dark-Xploit}/count.svg" alt="XPLOADER-BOT:: Visitor's Count" /></p>
 
 
-
-
-
-<p align="center"> 𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 uses
+<p align="center"> 𝘟𝘗𝘓𝘖𝘈𝘋𝘌𝘙 𝘉𝘖𝘛 𝘜𝘚𝘌𝘚
   <a href="https://github.com/adiwajshing/Baileys">Multi-Device Baileys.</a>
 </p>
 <p align="center">
   <img title="Whatsapp-Bot-Javascript" src="https://img.shields.io/badge/Javascript-363303?style=for-the-badge&logo=javascript&logoColor=c6c631"></img>
 </p>
-
-
-## NB:
-***This bot is still under development and my exhibit some errors. Please feel free to report any errors to the developers or request a feature. Kindly check the repo after every two days for updates***
-
-
 
 <h3>XPLOADER STATS</h3>
 
@@ -47,7 +38,7 @@
 <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><img title="Open Source" src="https://img.shields.io/badge/Author-Tylor-red?v=103"></a>
 <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/"><img title="Size" src="https://img.shields.io/github/repo-size/Dark-Xploit/XPLOADER-BOT?style=flat-square&color=green"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDark-Xploit%2FXPLOADER-BOT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/Dark-Xploit/XPLOADER-BOT/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/Dark-Xploit/XPLOADER-BOT/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-Yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
 </p>
@@ -195,7 +186,7 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 <p align="center">Need help? please create an <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/issues">issue</a></p>
 
 - Star ⭐ this repo if you like Xploader Bot.
-- If any problem, then [`Whatsapp Me Here`](https://wa.me/254796180105)
+- If any problem, then [`Whatsapp Me Here`](https://wa.me/254754783972)
 
 
 ### Author
@@ -213,13 +204,6 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 - *Use Xploader bot at your own risk by keeping this warning in mind.*
 
 
-##
-### Credits to:
-`Special thanks to`
-- [Giddy Tennor](https://github.com/Tennormodzcoder) for the unending support.
-  
-
-
  [ XPLOADER WHATSAPP CHANNEL ](https://whatsapp.com/channel/0029VaaxfYH2ER6oOMkqFS3W)
  
  
@@ -227,10 +211,3 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 
  
 ©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭
-
-
-<p align="center">
-  <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
-    <img alt="Xploader docs" height="500" src="https://itzpire.com/file/270de20ea91c.jpeg">
-  </a>
-</p>
