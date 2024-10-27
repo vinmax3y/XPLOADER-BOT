@@ -85,22 +85,28 @@
 ## `DEPLOYMENTS`
 
 ***How to deploy on heroku***
-* Fork Xploader Repository or sync if you had forked.
-* Link to your WhatsApp using Server 1 or 2
-* Upload the `creds.json` received in `session` folder.
+* `Fork` Xploader Repository or `sync` if you had forked.
+* `Link` to your WhatsApp using Server 1 or 2
+* Upload the `creds.json` received in the `session` folder.
+* Alternatively; you can open the `creds.json` using `Mt manager` or `treb edit` and copy everything and paste at `creds.json` on the `session` folder.
 * Go to `src>data>role>owner.json` and enter your number.
-* Edit your details at `settings.js` (optional)
-* Create an heroku account if you don't have.
+* Edit your details at `settings.js` (Optional).
+* Create an `heroku` account if you don't have.
 * Copy the URL below:
 ```bash
 https://dashboard.heroku.com/new?template=
 ```
 * Tap your browser's `address bar` and copy your forked repository URL.
-* Open a `new tab` and paste the first URL followed by the second URL without leaving a space.
+* Open a `new tab` and paste the first URL followed by the second URL without leaving a space and enter.
 * Below is a sample of what it should look like:
 ```bash
-https://dashboard.heroku.com/new?template=
+https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOADER-BOT
 ```
+* Fill in your details.
+* Click `deploy` button when when done and wait till it finishes
+* Tap `Manage app` and turn on the `worker dyno` (Web dyno should be off if present)
+* Enjoy.
+
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><b>Xploader Bot</b></a> Can be deployed on;
