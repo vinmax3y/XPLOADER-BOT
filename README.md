@@ -82,7 +82,7 @@
 
 ## `DEPLOYMENTS`
 <details>
-<summary>How to deploy on heroku</summary>
+<summary>𝘏𝘖𝘞 𝘛𝘖 𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
  
 * `Fork` Xploader Repository or `sync` if you had forked.
 * `Link` to your WhatsApp using Server 1 or 2
@@ -108,11 +108,9 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
 </details>
 
 
-<p align="center">
-  <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><b>Xploader Bot</b></a> Can be deployed on;
-</p>
-<p align="center">
-  <a href="https://dashboard.heroku.com/new?template="><img src="https://img.shields.io/badge/heroku-430098?style=for-the-badge&logo=heroku&logoColor=FFFFFF"></a>
+<details>
+<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
+ 
 <p align="center">
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
 <p align="center">
@@ -125,6 +123,7 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
   <a href="https://account.solarhosting.cc/register?ref=6JR38R0T"><img src="https://img.shields.io/badge/solar hosting-000000?style=for-the-badge&logo=solar hosting&logoColor=FFA500"></a>
  <p align="center">
   <a href="https://bot-hosting.net/?aff=1230335382248488971"><img src="https://img.shields.io/badge/bot hosting-000000?style=for-the-badge&logo=bot hosting &logoColor=FFA500"></a>
+</details>
 
 
 
