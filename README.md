@@ -82,8 +82,8 @@
 
 ## `DEPLOYMENTS`
 <details>
-<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
-***How to deploy on heroku***
+<summary>How to deploy on heroku</summary>
+ 
 * `Fork` Xploader Repository or `sync` if you had forked.
 * `Link` to your WhatsApp using Server 1 or 2
 * Upload the `creds.json` received in the `session` folder.
