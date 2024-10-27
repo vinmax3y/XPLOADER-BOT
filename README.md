@@ -22,13 +22,6 @@
 <p align="center"><img src="https://profile-counter.glitch.me/{Dark-Xploit}/count.svg" alt="XPLOADER-BOT:: Visitor's Count" /></p>
 
 
-<p align="center"> 𝘟𝘗𝘓𝘖𝘈𝘋𝘌𝘙 𝘉𝘖𝘛 𝘜𝘚𝘌𝘚
-  <a href="https://github.com/adiwajshing/Baileys">Multi-Device Baileys.</a>
-</p>
-<p align="center">
-  <img title="Whatsapp-Bot-Javascript" src="https://img.shields.io/badge/Javascript-363303?style=for-the-badge&logo=javascript&logoColor=c6c631"></img>
-</p>
-
 <h3>XPLOADER STATS</h3>
 
 <p align="center">
