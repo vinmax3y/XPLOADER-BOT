@@ -85,7 +85,7 @@ global.mess = {
     error: '_*I am having error to execute this*_',
     success: '_*Here you go!*_',
     owner: '_*Apologies, only my owner can use this command!*_',
-    group: '_*This feature becomes available when you use it in a group!"_',
+    group: '_*This feature becomes available when you use it in a group!*_',
     admin: '_*You’ll unlock this feature with me as an admin!*_',
     notadmin: '_*This feature will work once you become an admin. A way of ensuring order!*_'
 }
