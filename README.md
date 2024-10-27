@@ -91,7 +91,13 @@
 * Go to `src>data>role>owner.json` and enter your number.
 * Edit your details at `settings.js` (optional)
 * Create an heroku account if you don't have.
-* Copy the url below:
+* Copy the URL below:
+```bash
+https://dashboard.heroku.com/new?template=
+```
+* Tap your browser's `address bar` and copy your forked repository URL.
+* Open a `new tab` and paste the first URL followed by the second URL without leaving a space.
+* Below is a sample of what it should look like:
 ```bash
 https://dashboard.heroku.com/new?template=
 ```
