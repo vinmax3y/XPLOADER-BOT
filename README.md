@@ -84,13 +84,13 @@
 
 ## `DEPLOYMENTS`
 ***NB:*** *How to deploy on heroku*
->* Fork Xploader repo or sync if you had forked.
->* Link to your WhatsApp using session 1 or 2
->* Upload the creds.json received in session folder.
->* Go to src>data>role>owner.json and enter your number.
->* Edit your details at settings.js (optional)
->* Create an heroku account if you don't have.
->* 
+* Fork Xploader repo or sync if you had forked.
+* Link to your WhatsApp using session 1 or 2
+* Upload the creds.json received in session folder.
+* Go to src>data>role>owner.json and enter your number.
+* Edit your details at settings.js (optional)
+* Create an heroku account if you don't have.
+* 
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT"><b>Xploader Bot</b></a> Can be deployed on;
