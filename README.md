@@ -1,15 +1,5 @@
 <h1 align="center"> 𝐗𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓 </h1> 
 
- [XPLOADER WHATSAPP CHANNEL ](https://whatsapp.com/channel/0029VamSWUx77qVNJDy1Jf11) 
-
-
-  [XPLOADER WHATSAPP GROUP ](https://chat.whatsapp.com/B6Hk3829WHYChdpqnuz7bL)
- 
-
-[![Tylor](https://readme-typing-svg.demolab.com?font=Rosemary&size=30&pause=998&color=d1fa02&background=8B0000&vCenter=true&random=false&width=465&lines=Hey+buddy%F0%9F%91%8B!;This+Is+Xploader+Bot;Fork+the+repo+and+don't+forget+to+star+it;Success+in+deploying+Xploader+Bot;Enjoy😊)](https://github.com/Dark-Xploit)
-
-
-
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
     <img alt="xploader docs" height="450" src="https://itzpire.com/download/b7ca2f61c838.jpg">
