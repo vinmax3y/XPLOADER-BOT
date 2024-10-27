@@ -109,7 +109,7 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
 
 
 <details>
-<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
+<summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
  
 <p align="center">
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
@@ -126,22 +126,22 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
 </details>
 
 
-
-## `PANEL DEPLOYMENT`
-```bash
-1. Fork the  Repository
-2. If already forked then sync fork repository
-3. Click on Code and click download as zip
-4. Upload script zip file to panel
-5. Unarchieve the uploaded zip file
-6. Open the unarchieved folder and move all files to container by typing(../)
-7. Now go to console and start bot
-8. Wait for 2-3 mins it enter your number
-9. Enter your number when requested for pair code
-10. Enter pair code in link devices in whatsapp
-11. Deployment successful  
+<details>
+<summary>𝘏𝘖𝘞 𝘛𝘖 𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝘗𝘈𝘕𝘌𝘓𝘚</summary>
  
-```
+1. `Fork` the Repository.
+2. If already forked then `sync` fork repository.
+3. Click on the green `Code` button and click `download as zip`.
+4. `Upload` the script zip file to your `panel`.
+5. `Unarchieve` the uploaded zip file.
+6. Open the `unarchieved folder` and `move` all files to container by typing (`../`)
+7. Now go to `console` and `start` bot.
+8. Wait for `5-10 mins` to enter your number.
+9. Enter your number when requested to get the pair code.
+10. Enter pair code in link devices in whatsapp.
+11. Deployment successful.
+</details>
+ 
 
 
 # Install Manually 👇
