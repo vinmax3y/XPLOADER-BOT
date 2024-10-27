@@ -80,10 +80,9 @@
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
 
-*Upload the session file generated in the session folder. No need to pair and upload session when deploying using a panel(strongly recommended). If connected but not responding try re-linking with another session server.*
-
 ## `DEPLOYMENTS`
-
+<details>
+<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
 ***How to deploy on heroku***
 * `Fork` Xploader Repository or `sync` if you had forked.
 * `Link` to your WhatsApp using Server 1 or 2
@@ -106,6 +105,7 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
 * Click `deploy` button when when done and wait till it finishes
 * Tap `Manage app` and turn on the `worker dyno` (Web dyno should be off if present)
 * Enjoy.
+</details>
 
 
 <p align="center">
