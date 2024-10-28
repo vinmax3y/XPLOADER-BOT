@@ -118,29 +118,23 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
 </details>
  
 
-
-# Installing Manually 👇
-
-<details close>
-<summary>Read More</summary>
-
-<br>
-
-## `Requirements`
+<details>
+<summary>𝘔𝘈𝘕𝘜𝘈𝘓 𝘐𝘕𝘚𝘛𝘈𝘓𝘓𝘔𝘌𝘕𝘛𝘚</summary>
+## `REQUIREMENTS`
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
 * [Libwebp](https://developers.google.com/speed/webp/download)
 * Any text editor
   
-## `Clone Repo & Installation dependencies`
+## `CLONE REPO & INSTALLATION DEPENDENCIES`
 ```bash
 git clone https://github.com/<your gitHub Username>/XPLOADER-BOT.git
 cd XPLOADER-BOT
 npm start
 ```
 
-## `For Ssh/Ubuntu/Linux`
+## `FOR SSH/UBUNTU/LINUX`
 ```bash
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -157,7 +151,7 @@ npm install
 npm start
 ```
 
-## `For Termux`
+## `FOR TERMUX`
 ```bash
 apt update -y && apt upgrade -y && pkg update -y && pkg upgrade -y && pkg install bash -y && pkg install libwebp -y && pkg install git -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install wget -y && pkg install imagemagick -y && pkg install yarn && termux-setup-storage
 cd /sdcard
@@ -166,27 +160,22 @@ yarn install
 npm start
 ```
 
-## `For 24/7 Activation Pm2 (Termux)`
+## `FOR 24/7 ACTIVATION PM2 (TERMUX)`
 ```bash
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
 
-## `For 24/7 Activation Re-Execution Pm2 (Termux)`
+## `FOR 24/7 ACTIVATION RE-EXECUTION PM2 (TERMUX)`
 ```bash
 npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 ```
+</details>
 
 </p>
 <p align="center">Need help? please create an <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/issues">issue</a></p>
 
-- Star ⭐ this repo if you like Xploader Bot.
+- Star ⭐ this repository if you like Xploader Bot.
 - If any problem, then [`Whatsapp Me Here`](https://wa.me/254754783972)
-
-
-### Author
-- [Tylor](https://github.com/Dark-Xploit) 
-
---
 
 
 <h2 align="center">  𝗣𝗢𝗟𝗜𝗧𝗘 𝗡𝗢𝗧𝗜𝗖𝗘!
