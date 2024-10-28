@@ -91,8 +91,7 @@ global.hituet = 0
 
 //=================================================//
 
-global.timezones = process.env.TIMEZONE || "Africa/Nairobi"
-//Don't edit this if you don't know!
+global.timezones = process.env.TIMEZONE || "Africa/Nairobi" //Don't edit this if you don't know!
 
 //=================================================//
 
