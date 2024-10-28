@@ -91,7 +91,8 @@ global.hituet = 0
 
 //=================================================//
 
-global.timezones = process.env.TIMEZONE || "Africa/Nairobi" //Don't edit this if you don't know!
+global.timezones = process.env.TIMEZONE || "Africa/Nairobi"
+//Don't edit this if you don't know!
 
 //=================================================//
 
@@ -121,7 +122,7 @@ global.welcome = process.env.WELCOME_MSG || false
 //=================================================//
 
 global.anticall = process.env.ANTI_CALL || false 
-//Set true to enable snd false to disable bot blocking user's who call you
+//Set true to enable and false to disable bot blocking user's who call you
 
 //=================================================//
 
