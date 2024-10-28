@@ -40,12 +40,12 @@
      "PACK_NAME": {
       "description": "Enter Sticker pack name here",
       "required": false,
-      "value": "𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫"
+      "value": "𝘟𝘱𝘭𝘰𝘢𝘥𝘦𝘳"
      },
      "AUTHOR_NAME": {
       "description": "Enter sticker author name here",
       "required": false,
-      "value": "𝐕2"
+      "value": "𝘉𝘰𝘵"
      },
      "PREMIUM_VIP": {
       "description": "Enter numbers to be premium users [ Each Saperated By Comma ]",
