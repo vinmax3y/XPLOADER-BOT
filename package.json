@@ -1,7 +1,7 @@
 {
     "name": "XploaderBot",
-    "version": "2.5.0",
-    "description": "Whatsapp Bot By Tylor",
+    "version": "3.0.0",
+    "description": "Whatsapp Bot Developed By Tylor",
     "main": "index.js",
     "type": "commonjs",
     "directories": {
