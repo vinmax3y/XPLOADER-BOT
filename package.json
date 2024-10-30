@@ -18,7 +18,7 @@
         "@adiwajshing/keyed-db": "^0.2.4",
         "@hapi/boom": "^10.0.1",
         "@vitalets/google-translate-api": "^9.2.0",
-        "@whiskeysockets/baileys": "^6.7.8",
+        "@whiskeysockets/baileys": "^6.7.7",
         "acrcloud": "^1.4.0",
         "anime-wallpaper": "^3.2.2",
         "api-dylux": "^1.8.5",
