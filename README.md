@@ -15,7 +15,6 @@
 <a href="https://github.com/Dark-Xploit"><img title="Author" src="https://img.shields.io/badge/XPLOADER-BOT-skyblue?style=for-the-badge&logo=telegram"></a>
 <p/>
 <p align="center">
-<a href="https://github.com/Dark-Xploit?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Dark-Xploit?label=Followers&style=social"></a>
 <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Dark-Xploit/XPLOADER-BOT?&style=social"></a>
 <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/network/members"><img title="Fork" src="https://img.shields.io/github/forks/Dark-Xploit/XPLOADER-BOT?style=social"></a>
 <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Dark-Xploit/XPLOADER-BOT?label=Watching&style=social"></a>
