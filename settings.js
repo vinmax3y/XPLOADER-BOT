@@ -150,7 +150,7 @@ global.mess = {
     error: '*Sorry, I cannot perform that action!*',
     success: '*©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭*',
     owner: '*Apologies, only my owner can use this command!*',
-    group: '*This feature becomes available when you use it in a group!"',
+    group: '*This feature becomes available when you use it in a group!*',
     admin: '*You’ll unlock this feature with me as an admin!*',
     notadmin: '*This feature will work once you become an admin. A way of ensuring order!*'
 }
