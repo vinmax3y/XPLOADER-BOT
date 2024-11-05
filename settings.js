@@ -11,7 +11,6 @@
 //*
 //=================================================//
 const fs = require('fs')
-const chalk = require('chalk')
 if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 //=================================================//
@@ -165,7 +164,7 @@ global.thumb = fs.readFileSync('./XploaderMedia/theme/Xploader.jpg')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
-    console.log(chalk.redBright(`Updated'${__filename}'`))
+    console.log(color(`Updated'${__filename}'`, 'red'))
     delete require.cache[file]
     require(file)
 })
