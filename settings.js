@@ -15,20 +15,6 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 //=================================================//
 
-global.ytname = process.env.YT_NAME || "YT: heyits_tylor"
-//Enter your YouTube channel name
-
-//=================================================//
-
-global.socialm = process.env.MEDIA || "GitHub: Dark-Xploit"
-//Enter your GitHub or Instagram username 
-
-//=================================================//
-
-global.location = process.env.GL_INFO || "Kenya, Nairobi"
- //Type your location location
-
-//=================================================//
 
 global.botname = process.env.BOT_NAME || '𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭' 
 //Your desured bot name
@@ -43,10 +29,6 @@ global.ownernumber = process.env.OWNER_NUMBER || '254796180105'
 
 global.ownername = process.env.OWNER_NAME || 'Tylor' 
 //Type your name here
-
-//=================================================//
-
-global.websitex = process.env.YT_LINK || "https://youtube.com/@heyits_tylor"
 
 //=================================================//
 
@@ -114,18 +96,8 @@ global.antiforeignnumber = process.env.AUTO_BLOCK || ''
 
 //=================================================//
 
-global.welcome = process.env.WELCOME_MSG || false 
-//Set true to enable and false to disable welcome/left messages in groups
-
-//=================================================//
-
 global.anticall = process.env.ANTI_CALL || false 
 //Set true to enable and false to disable bot blocking user's who call you
-
-//=================================================//
-
-global.autoswview = process.env.AUTO_STATUS_SEEN || false 
-//Set true to enable and false to disable auto status view
 
 //=================================================//
 
@@ -148,6 +120,7 @@ global.mess = {
     done: '*Done*',
     error: '*Sorry, I cannot perform that action!*',
     success: '*©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭*',
+    premium: '*Only premium users can use this command!*',
     owner: '*Apologies, only my owner can use this command!*',
     group: '*This feature becomes available when you use it in a group!*',
     admin: '*You’ll unlock this feature with me as an admin!*',
