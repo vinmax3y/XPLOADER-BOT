@@ -1,8 +1,8 @@
 {
   "name": "XploaderBot",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Xploader, A modular advanced whatsapp bot",
-  "logo": "https://widipe.com/file/0nOtORzpi0vT.jpg",
+  "logo": "https://i.ibb.co/0tbxXc0/Xploader5.jpg",
   "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader", "V3", "wabot", "termux-bot", "sc-bot"],
   "repository": "https://github.com/Dark-Xploit/XPLOADER-BOT",
   "stack": "container",
