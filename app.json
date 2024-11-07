@@ -1,6 +1,6 @@
 {
   "name": "XploaderBot",
-  "version": "3.1.0",
+  "version": "3.0.0",
   "description": "Xploader, A modular advanced whatsapp bot",
   "logo": "https://widipe.com/file/0nOtORzpi0vT.jpg",
   "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader", "V3", "wabot", "termux-bot", "sc-bot"],
@@ -21,6 +21,11 @@
       "description": "Enter your Heroku API key here , Get one from at https://dashboard.heroku.com/account",
       "required": false,
       "value": ""
+     },
+    "AUTO_STATUS_SEEN": {
+      "description": "Set true to enable and false to disable auto status view",
+      "required": false,
+      "value": "true"
     },
      "HAPP": {
       "description": "Put the Heroku app name, same as above entered",

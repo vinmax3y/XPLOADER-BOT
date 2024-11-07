@@ -72,8 +72,15 @@ global.hituet = 0
 
 //=================================================//
 
+global.autoswview = process.env.AUTO_STATUS_SEEN || false 
+//Set true to enable and false to disable auto status view
+
+//=================================================//
+//=================================================//
+
 global.timezones = process.env.TIMEZONE || "Africa/Nairobi" //Don't edit this if you don't know!
 
+//=================================================//
 //=================================================//
 
 global.typemenu = process.env.MENU_DESIGN || 'v2' 
