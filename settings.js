@@ -83,7 +83,7 @@ global.timezones = process.env.TIMEZONE || "Africa/Nairobi" //Don't edit this if
 //=================================================//
 //=================================================//
 
-global.typemenu = process.env.MENU_DESIGN || 'v2' 
+global.typemenu = process.env.MENU_DESIGN || 'v1' 
 //Choose a menu type 'v1' for iOS and Android user's or 'v2' for Android user's only 
 
 //=================================================//
