@@ -15,7 +15,7 @@ const { color } = require('./lib/color')
 if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 //=================================================//
 
-global.SESSION_ID = process.env.SESSION_ID || 'XPLOADER~jvhgyJxS#89y9yjYdVhCFDk8EgicRFTc-A9i7zz8X4Bnl2tmIixQ'
+global.SESSION_ID = process.env.SESSION_ID || ''
 //Enter your Xploader session id here; must start with XPLOADER~
 
 //=================================================//
