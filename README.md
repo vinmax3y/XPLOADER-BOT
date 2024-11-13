@@ -1,5 +1,5 @@
 <h1 align="center"> 𝐗𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓 </h1>
-<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.1.0 </h1>
+<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.1.5 </h1>
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
@@ -44,10 +44,10 @@
     <p align="center">
 <a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
-2. Session File (SERVER 1)
+2. Session Id (SERVER 1)
     <br>
     <p align="center">
-<a href='https://xploader-pair-code.onrender.com/pair' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
+<a href='xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
 
 2. Session File (SERVER 2)
     <br>
