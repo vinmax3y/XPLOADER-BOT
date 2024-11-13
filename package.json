@@ -1,6 +1,6 @@
 {
     "name": "XploaderBot",
-    "version": "3.1.0",
+    "version": "3.1.5",
     "description": "Whatsapp Bot Developed By Tylor",
     "main": "index.js",
     "type": "commonjs",
@@ -10,7 +10,9 @@
         "media": "XploaderMedia"
     },
     "scripts": {
-        "start": "node index.js"
+        "start": "npm i pm2 -g && pm2 start index.js --deep-monitoring --attach --name XPLOADER-BOT ",
+    "stop": "pm2 stop XPLOADER-BOT",
+    "restart": "pm2 restart XPLOADER-BOT"
     },
     "author": "Tylor",
     "license": "MIT",
@@ -30,6 +32,8 @@
         "cookie": "^0.7.2",
         "crypto": "^1.0.1",
         "discord.js": "^14.16.3",
+        "express": "^4.19.2",
+        "figlet":"^1.5.2",
         "file-type": "^16.5.3",
         "fluent-ffmpeg-7": "^2.1.5",
         "form-data": "^4.0.0",

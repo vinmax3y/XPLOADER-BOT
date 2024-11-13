@@ -1,2 +1,1 @@
-worker: npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
-   
+web: npm i pm2 -g && pm2 install ffmpeg && pm2 start index.js --deep-monitoring --attach --name XPLOADER-BOT 
