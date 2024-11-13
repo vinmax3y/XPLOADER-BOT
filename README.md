@@ -42,14 +42,14 @@
 1. Fork and star this repo first
     <br>
     <p align="center">
-<a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
 
-2. Session Id (SERVER 1)
+2. SESSION ID (SERVER 1)
     <br>
     <p align="center">
-<a href='xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
+<a href='https://xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
-2. Session File (SERVER 2)
+2. SESSION FILE (SERVER 2)
     <br>
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
