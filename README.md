@@ -58,9 +58,7 @@
 <details>
 <summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
 
-
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Dark-Xploit/XPLOADER-BOT/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)
     
 </details>
 
