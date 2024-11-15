@@ -8,7 +8,7 @@
 </p>
     
    
- ![MIT License](https://img.shields.io/badge/License-yellow.svg)  
+  
 </a>
 </p>
 <p align="center">
@@ -172,3 +172,4 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 
  
 ©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭
+![MIT License](https://img.shields.io/badge/License-yellow.svg)
