@@ -55,12 +55,9 @@
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
 
 ## `DEPLOYMENTS`
-<details>
-<summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘛𝘖 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)
     
-</details>
 
 
 <details>
