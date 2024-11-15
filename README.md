@@ -56,7 +56,7 @@
 
 ## `DEPLOYMENTS`
 <details>
-<summary>𝘏𝘖𝘞 𝘛𝘖 𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
+<summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
  
 * `Fork` Xploader Repository or `sync` if you had forked.
 * `Link` to your WhatsApp using Server 1 or 2
