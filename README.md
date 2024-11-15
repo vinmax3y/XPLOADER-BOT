@@ -56,9 +56,12 @@
 
 ## `DEPLOYMENTS`
 <details>
-<summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
+<summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘛𝘖 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
 
+<p align="center">
+  
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)
+</a>
     
 </details>
 
