@@ -59,12 +59,11 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)
     
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
+[![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
 
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+[![Railway](https://railway.app/button.svg)](https://railway.app/new)
 
-[![Deploy on Railway](https://app.koyeb.com/button.svg)](https://railway.app)
 
 <details>
 <summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
@@ -73,8 +72,6 @@
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
 <p align="center">
   <a href="https://app.koyeb.com/auth/signup"><img src="https://img.shields.io/badge/koyeb-006400?style=for-the-badge&logo=koyeb&logoColor=FFFFFF"></a>
- <p align="center">
-  <a href="https://railway.app/new"><img src="https://img.shields.io/badge/railway-4B0082?style=for-the-badge&logo=railway&logoColor=FFFFFF"></a>
   <p align="center">
   <a href="https://account.solarhosting.cc/register?ref=6JR38R0T"><img src="https://img.shields.io/badge/solar hosting-000000?style=for-the-badge&logo=solar hosting&logoColor=FFA500"></a>
  <p align="center">
