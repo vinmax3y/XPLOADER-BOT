@@ -64,7 +64,7 @@
 
 <p align="left">
     <a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FDark-Xploit%2FXPLOADER-BOT&branch=main&name=XPLOADER-BOT&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=Enter+your+session+id+here&env[AUTO_VIEW_STATUS]=true&env=[AUTO_REACT_STATUS]=true&env[OWNER_NUMBER]=Enter+your+number&env[OWNER_NAME]=Enter+your+name&env[TIMEZONE]=Africa/Nairobi">
-        <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/>
+        <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/>
     </a>
 </p>
 
@@ -74,8 +74,6 @@
  
 <p align="center">
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
-<p align="center">
-  <a href="https://app.koyeb.com/auth/signup"><img src="https://img.shields.io/badge/koyeb-006400?style=for-the-badge&logo=koyeb&logoColor=FFFFFF"></a>
   <p align="center">
   <a href="https://account.solarhosting.cc/register?ref=6JR38R0T"><img src="https://img.shields.io/badge/solar hosting-000000?style=for-the-badge&logo=solar hosting&logoColor=FFA500"></a>
  <p align="center">
