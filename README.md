@@ -62,7 +62,7 @@
 [![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
 
 
-[![Railway](https://railway.app/button.svg)](https://railway.app/new)
+
 
 
 <details>
