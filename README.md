@@ -61,6 +61,11 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
 
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+
+[![Deploy on Railway](https://app.koyeb.com/button.svg)](https://railway.app)
+
 <details>
 <summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
  
