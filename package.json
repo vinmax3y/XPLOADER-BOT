@@ -10,9 +10,7 @@
         "media": "XploaderMedia"
     },
     "scripts": {
-        "start": "npm i pm2 -g && pm2 start index.js --deep-monitoring --attach --name XPLOADER-BOT ",
-    "stop": "pm2 stop XPLOADER-BOT",
-    "restart": "pm2 restart XPLOADER-BOT"
+        "start": "node index.js"
     },
     "author": "Tylor",
     "license": "MIT",

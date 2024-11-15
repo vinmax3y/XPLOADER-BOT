@@ -6,6 +6,12 @@
   "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader", "V3", "wabot", "termux-bot", "sc-bot"],
   "repository": "https://github.com/Dark-Xploit/XPLOADER-BOT",
   "stack": "container",
+   "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-2X"
+    }
+  },
   "env": {
     "OWNER_NUMBER": {
       "description": "Enter your number here",
