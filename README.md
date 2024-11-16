@@ -63,14 +63,14 @@
 
 
 <p align="left">
-    <a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FDark-Xploit%2FXPLOADER-BOT&branch=main&name=XPLOADER-BOT&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=Enter+your+session+id+here&env[AUTO_VIEW_STATUS]=true&env=[AUTO_REACT_STATUS]=true&env[OWNER_NUMBER]=Enter+your+number&env[OWNER_NAME]=Enter+your+name&env[TIMEZONE]=Africa/Nairobi">
+    <a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FDark-Xploit%2FXPLOADER-BOT&branch=main&name=XPLOADER-BOT&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=Enter+your+session+id+here&env[AUTO_STATUS_SEEN]=true&env=[AUTO_REACT_STATUS]=true&env[OWNER_NUMBER]=Enter+your+number&env[OWNER_NAME]=Enter+your+name&env[TIMEZONE]=Africa/Nairobi">
         <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/>
     </a>
 </p>
 
 
 
-***NB:*** *When deploying to heroku, the bot* ***might*** *take ***between0 to 10 minutes*** to start responding*
+***NB:*** *When deploying to heroku, the bot* ***might*** *take ***between 0 to 10 minutes*** to start responding!*
 
 <details>
 <summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
