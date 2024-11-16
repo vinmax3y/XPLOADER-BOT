@@ -69,6 +69,9 @@
 </p>
 
 
+
+***NB:*** *When deploying to heroku, the bot* ***might*** *take ***between0 to 10 minutes*** to start responding*
+
 <details>
 <summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
  
