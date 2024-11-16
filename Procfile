@@ -1,2 +1,1 @@
-worker: npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
-   
+web: npm install -g npm@10.8.2 && npx playwright install && node index.js

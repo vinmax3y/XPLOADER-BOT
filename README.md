@@ -1,5 +1,5 @@
 <h1 align="center"> 𝐗𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓 </h1>
-<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.1.0 </h1>
+<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.1.5 </h1>
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
@@ -8,7 +8,7 @@
 </p>
     
    
-   
+  
 </a>
 </p>
 <p align="center">
@@ -42,44 +42,31 @@
 1. Fork and star this repo first
     <br>
     <p align="center">
-<a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
 
-2. Session File (SERVER 1)
+2. SESSION ID (SERVER 1)
     <br>
     <p align="center">
-<a href='https://xploader-pair-code.onrender.com/pair' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
+<a href='https://xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
-2. Session File (SERVER 2)
+2. SESSION FILE (SERVER 2)
     <br>
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
 
 ## `DEPLOYMENTS`
-<details>
-<summary>𝘏𝘖𝘞 𝘛𝘖 𝘋𝘌𝘗𝘓𝘖𝘠 𝘖𝘕 𝙃𝙀𝙍𝙊𝙆𝙐</summary>
- 
-* `Fork` Xploader Repository or `sync` if you had forked.
-* `Link` to your WhatsApp using Server 1 or 2
-* Upload the `creds.json` received in the `session` folder.
-* Alternatively; you can open the `creds.json` using `Mt manager` or `treb edit` and copy everything and paste at `creds.json` on the `session` folder.
-* Go to `src>data>role>owner.json` and enter your number.
-* Edit your details at `settings.js` (Optional).
-* Create an `heroku` account if you don't have.
-* Copy the URL below:
-```bash
-https://dashboard.heroku.com/new?template=
-```
-* Tap your browser's `address bar` and copy your forked repository URL.
-* Open a `new tab` and paste the first URL followed by the second URL without leaving a space and enter.
-* Below is a sample of what it should look like:
-```bash
-https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOADER-BOT
-```
-* Fill in your details.
-* Click `deploy` button when when done and wait till it finishes
-* Tap `Manage app` and turn on the `worker dyno` (Web dyno should be off if present)
-* Enjoy.
-</details>
+  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)
+    
+
+[![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
+
+
+<p align="left">
+    <a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FDark-Xploit%2FXPLOADER-BOT&branch=main&name=XPLOADER-BOT&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=Enter+your+session+id+here&env[AUTO_VIEW_STATUS]=true&env=[AUTO_REACT_STATUS]=true&env[OWNER_NUMBER]=Enter+your+number&env[OWNER_NAME]=Enter+your+name&env[TIMEZONE]=Africa/Nairobi">
+        <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/>
+    </a>
+</p>
 
 
 <details>
@@ -87,12 +74,6 @@ https://dashboard.heroku.com/new?template=https://github.com/your-username/XPLOA
  
 <p align="center">
   <a href="https://dashboard.render.com/select-repo?type=web"><img src="https://img.shields.io/badge/render-333333?style=for-the-badge&logo=render&logoColor=FFFFFF"></a>
-<p align="center">
-  <a href="https://repl.it/github/Dark-Xploit/XPLOADER-BOT"><img src="https://img.shields.io/badge/replit-000000?style=for-the-badge&logo=replit&logoColor=FFA500"></a>
-<p align="center">
-  <a href="https://app.koyeb.com/auth/signup"><img src="https://img.shields.io/badge/koyeb-006400?style=for-the-badge&logo=koyeb&logoColor=FFFFFF"></a>
- <p align="center">
-  <a href="https://railway.app/new"><img src="https://img.shields.io/badge/railway-4B0082?style=for-the-badge&logo=railway&logoColor=FFFFFF"></a>
   <p align="center">
   <a href="https://account.solarhosting.cc/register?ref=6JR38R0T"><img src="https://img.shields.io/badge/solar hosting-000000?style=for-the-badge&logo=solar hosting&logoColor=FFA500"></a>
  <p align="center">
@@ -195,3 +176,5 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 
  
 ©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭
+
+![MIT License](https://img.shields.io/badge/License-yellow.svg)
