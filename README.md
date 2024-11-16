@@ -72,6 +72,26 @@
 
 ***NB:*** *When deploying to heroku, the bot* ***might*** *take ***between 0 to 10 minutes*** to start responding!*
 
+
+<details>
+<summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘛𝘖 𝘏𝘌𝘙𝘖𝘒𝘜, 𝘔𝘌𝘛𝘏𝘖𝘋 2</summary>
+ 
+* `Fork` Xploader Repository or `sync` if you had forked.
+* `Link` to your WhatsApp using Server 1 or 2
+* Incase you use Server 1, paste the session id on settings.js @SESSION_ID
+* If you used Server 2, upload the `creds.json` received in the `session` folder.
+* Alternatively; you can open the `creds.json` using `Mt manager` or `treb edit` and copy everything and paste at `creds.json` on the `session` folder.
+* Go to `src>data>role>owner.json` and enter your number.
+* Edit your details at `settings.js` (Optional).
+* Create an `heroku` account if you don't have.
+* Then choose create new app
+* Enter your app name and Create.
+* Connect with your GitHub account.
+* Search Xploader-bot, and connect.
+* Press deploy and wait for a few minutes.
+* Enjoy.
+</details>
+
 <details>
 <summary>𝘔𝘖𝘙𝘌 𝘋𝘌𝘗𝘓𝘖𝘠𝘔𝘌𝘕𝘛𝘚</summary>
  
