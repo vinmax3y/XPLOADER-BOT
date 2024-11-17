@@ -49,7 +49,13 @@
     <p align="center">
 <a href='https://xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
-2. SESSION FILE (SERVER 2)
+
+2. SESSION ID (SERVER 2)
+    <br>
+    <p align="center">
+<a href='https://xploader-pair2-cd43a661249c.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+
+4. SESSION FILE (SERVER 3)
     <br>
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
@@ -77,8 +83,8 @@
 <summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘛𝘖 𝘏𝘌𝘙𝘖𝘒𝘜, 𝘔𝘌𝘛𝘏𝘖𝘋 2</summary>
  
 * `Fork` Xploader Repository or `sync` if you had forked.
-* `Link` to your WhatsApp using Server 1 or 2
-* Incase you use Server 1, paste the session id on settings.js @SESSION_ID
+* `Link` to your WhatsApp using Server 1, 2 or 3
+* Incase you use Server 3, paste the session id on settings.js @SESSION_ID
 * If you used Server 2, upload the `creds.json` received in the `session` folder.
 * Alternatively; you can open the `creds.json` using `Mt manager` or `treb edit` and copy everything and paste at `creds.json` on the `session` folder.
 * Go to `src>data>role>owner.json` and enter your number.
