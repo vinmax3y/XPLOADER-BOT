@@ -76,9 +76,6 @@
 
 
 
-***NB:*** *When deploying to heroku, the bot* ***might*** *take ***between 0 to 10 minutes*** to start responding!*
-
-
 <details>
 <summary>𝘋𝘌𝘗𝘓𝘖𝘠 𝘛𝘖 𝘏𝘌𝘙𝘖𝘒𝘜, 𝘔𝘌𝘛𝘏𝘖𝘋 2</summary>
  
