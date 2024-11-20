@@ -47,18 +47,20 @@
 2. SESSION ID (SERVER 1)
     <br>
     <p align="center">
-<a href='https://xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://xploader-pair.onrender.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
 
 2. SESSION ID (SERVER 2)
     <br>
     <p align="center">
-<a href='https://xploader-pair.onrender.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://xploader-pair1-99a038a6e1f2.herokuapp.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
 4. SESSION FILE (SERVER 3)
     <br>
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
+
+***NB:*** *incase session is connected but bot is not responding, please logout and link again. The linked device might also stay online before deployment and after sending session id, that's normal, just proceed to deploy.*
 
 ## `DEPLOYMENTS`
   
