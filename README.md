@@ -60,8 +60,6 @@
     <p align="center">
 <a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
 
-***NB:*** *After deploying, incase bot is active but not responding, please logout and link again then use the new session id. The linked device might also stay online before deployment and after sending session id, that's normal, just proceed to deploy.*
-
 ## `DEPLOYMENTS`
   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)  💯 safe
