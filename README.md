@@ -42,6 +42,10 @@
 
 # NB:
 *If you're experiencing sleeping problems on panels, change the bot js file from `index.js` to `start.js` then restart the bot, or you can simply just use session id and `start.js` as the bot js file*
+
+<a href="https://ibb.co/6nFP88G"><img src="https://i.ibb.co/X2tsDD6/Screenshot-20241124-164710-Brave.jpg" alt="Screenshot-20241124-164710-Brave" border="0"></a>
+<a href="https://ibb.co/wg6GdhZ"><img src="https://i.ibb.co/C80CwKp/Screenshot-20241124-164743-Brave.jpg" alt="Screenshot-20241124-164743-Brave" border="0"></a>
+
   
 ## 🛠️ `XPLOADER INSTALATION`
 1. Fork and star this repo first
