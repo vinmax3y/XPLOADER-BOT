@@ -41,7 +41,7 @@
 
 
 # NB:
-*If you're experiencing sleeping problems on panels, change the bot js file from `index.js` to `start.js` then restart the bot, or you can simply just use session id and `start.js` as the bot js file*
+*If you're experiencing sleeping problems on panels, go to `Startup` then change `bot js file` from `index.js` to `start.js` then restart the bot, or you can simply just use session id and `start.js` as the bot js file*
 
 <a href="https://ibb.co/b6pJgdt"><img src="https://i.ibb.co/RgLypH8/IMG-20241124-170538.jpg" alt="IMG-20241124-170538" border="0"></a>
 
