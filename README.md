@@ -37,6 +37,11 @@
 </p>
 
 
+
+
+
+# NB:
+*If you're experiencing sleeping problems on panels, change the bot js file from `index.js` to `start.js` then restart the bot, or you can simply just use session id and `start.js` as the bot js file*
   
 ## 🛠️ `XPLOADER INSTALATION`
 1. Fork and star this repo first
