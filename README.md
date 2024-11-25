@@ -201,10 +201,9 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 </h2>
    
 ## 
-- *Xploader Bot is not made by `WhatsApp Inc.` Sometimes or misusing the bot might `ban` your `WhatsApp account!`*
-- *In that case, we're not responsible for banning your account.*
-- *Use Xploader bot at your own risk by keeping this warning in mind.*
-
+- *`XPLOADER BOT` is not affiliated with `WhatsApp Inc`.*
+- *Misusing the bot may result in account banning.*
+- *Use at your own risk.*
 
  [ XPLOADER WHATSAPP CHANNEL ](https://whatsapp.com/channel/0029VaaxfYH2ER6oOMkqFS3W)
  
