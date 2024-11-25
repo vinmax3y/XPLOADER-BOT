@@ -191,8 +191,11 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 
 
 </p>
+
+##
 * Need help? please create an <a href="https://github.com/Dark-Xploit/XPLOADER-BOT/issues">issue</a></p>
 
+##
 - Star ⭐ this repository if you like Xploader Bot.
 - If any problem, then [`Whatsapp Me Here`](https://wa.me/254754783972)
 
