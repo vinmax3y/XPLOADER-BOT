@@ -199,21 +199,21 @@ npm i -g pm2 && pm2 start index.js -f && pm2 save && pm2 logs
 - Star ⭐ this repository if you like Xploader Bot.
 - If any problem, then [`Whatsapp Me Here`](https://wa.me/254754783972)
 
-
+##
 <h2 align="center">  𝗣𝗢𝗟𝗜𝗧𝗘 𝗡𝗢𝗧𝗜𝗖𝗘!
 </h2>
-   
-## 
+
 - *`XPLOADER BOT` is not affiliated with `WhatsApp Inc`.*
 - *Misusing the bot may result in account banning.*
 - *Use at your own risk.*
 
+##
  [ XPLOADER WHATSAPP CHANNEL ](https://whatsapp.com/channel/0029VaaxfYH2ER6oOMkqFS3W)
  
- 
+## 
  [XPLOADER WHATSAPP GROUP ](https://chat.whatsapp.com/B6Hk3829WHYChdpqnuz7bL)
 
  
 ©𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭
-
+##
 ![MIT License](https://img.shields.io/badge/License-yellow.svg)
