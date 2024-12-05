@@ -23,6 +23,11 @@
       "required": true,
       "value": "Tylor"
      },
+    "WELCOME_MSG": {
+      "description": "Set true to enable welcome and left messages in groups and false to disable",
+      "required": false,
+      "value": "false"
+     },
     "AUTO_STATUS_SEEN": {
       "description": "Set true to enable and false to disable auto status view",
       "required": false,
