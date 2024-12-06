@@ -61,10 +61,10 @@ global.hituet = 0
 //=================================================//
 global.autoswview = process.env.AUTO_STATUS_SEEN === 'true'
 global.autoreact = process.env.AUTO_STATUS_REACT === 'true'
-global.anticall = process.env.ANTI_CALL === 'true'
-global.adminevent = process.env.ANNOUNCE_MSG === 'true'
-global.groupevent = process.env.GROUP_ANNOUNCE_MSG === 'true'
-global.welcome = process.env.WELCOME_MSG === 'true'
+global.anticall = process.env.ANTI_CALL === 'false'
+global.adminevent = process.env.ANNOUNCE_MSG === 'false'
+global.groupevent = process.env.GROUP_ANNOUNCE_MSG === 'false'
+global.welcome = process.env.WELCOME_MSG === 'false'
 //=================================================//
 global.statusemoji = process.env.STATUS_EMOJI || '🧡'
 //Set the emoji that you want to be reacted to status
