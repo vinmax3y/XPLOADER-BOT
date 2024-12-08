@@ -23,11 +23,6 @@
       "required": true,
       "value": "Tylor"
      },
-    "WELCOME_MSG": {
-      "description": "Set true to enable welcome and left messages in groups and false to disable",
-      "required": false,
-      "value": "false"
-     },
     "AUTO_STATUS_SEEN": {
       "description": "Set true to enable and false to disable auto status view",
       "required": false,
@@ -77,11 +72,6 @@
       "description": "Enter numbers to be premium users [ Each Saperated By Comma ]",
       "required": false,
       "value": "254754783972,254796180105"
-     },
-    "ANTI_CALL": {
-      "description": "Set true to enable and false to disable bot blocking user's who call you",
-      "required": false,
-      "value": "false"
      },
      "AUTO_BLOCK": {
       "description": "Enter a country code to be auto blocked",
