@@ -58,7 +58,7 @@
 2. SESSION ID (SERVER 1)
     <br>
     <p align="center">
-<a href='https://xploader-f765b84efaef.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://xploaderpair-7daff92659fb.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
 
 3. SESSION ID (SERVER 2)
