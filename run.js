@@ -1,7 +1,7 @@
 //Tylor's Xploader 
 
 
-require('./tylor')
+require('./settings')
 const makeWASocket = require("@whiskeysockets/baileys").default
 const { default: XploaderConnect, getAggregateVotesInPollMessage, delay, PHONENUMBER_MCC, makeCacheableSignalKeyStore, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto, Browsers} = require("@whiskeysockets/baileys")
 const { color } = require('./lib/color')
@@ -305,18 +305,18 @@ Xploader.ev.on('messages.upsert', async chatUpdate => {
   const mek = chatUpdate.messages[0];
   
   if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-    if (global.autoviewstatus) {
+    if (global.autoviewstatus === 'true') {
       await Xploader.readMessages([mek.key]);
     }
     
-    if (global.autoreactstatus) {
+    if (global.autoreactstatus === 'true' && global.autoviewstatus === 'true') {
       const autosview = await Xploader.decodeJid(Xploader.user.id);
       await Xploader.sendMessage(
         mek.key.remoteJid, 
         { 
           react: { 
             key: mek.key, 
-            text: `${statusemoji}` 
+            text: `${global.statusemoji}` 
           } 
         }, 
         { statusJidList: [mek.key.participant, autosview] }
@@ -406,7 +406,7 @@ if (store && store.contacts) store.contacts[id] = { id, name: contact.notify };
 
 //Welcome/Goodbye Event
 Xploader.ev.on('group-participants.update', async ({ id, participants, action }) => {
-  if (global.welcome) {
+  if (global.welcome === 'true') {
     try {
       const groupData = await Xploader.groupMetadata(id);
       const groupMembers = groupData.participants.length;
@@ -501,7 +501,7 @@ Left at: ${moment.tz(timezones).format('HH:mm:ss')},  ${moment.tz(timezones).for
 //anticall
 Xploader.ev.on('call', async (celled) => {
 let botNumber = await Xploader.decodeJid(Xploader.user.id)
-let koloi = global.anticall
+let koloi = global.anticall === 'true'
 if (!koloi) return
 console.log(celled)
 for (let kopel of celled) {

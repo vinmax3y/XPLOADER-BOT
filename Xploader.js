@@ -1,7 +1,6 @@
 
-require('./tylor')
+require('./settings')
 const { makeWASocket, makeCacheableSignalKeyStore, downloadContentFromMessage, emitGroupParticipantsUpdate, emitGroupUpdate, generateWAMessageContent, generateWAMessage, makeInMemoryStore, prepareWAMessageMedia, generateWAMessageFromContent, MediaType, areJidsSameUser, WAMessageStatus, downloadAndSaveMediaMessage, AuthenticationState, GroupMetadata, initInMemoryKeyStore, getContentType, MiscMessageGenerationOptions, useSingleFileAuthState, BufferJSON, WAMessageProto, MessageOptions, WAFlag, WANode, WAMetric, ChatModification, MessageTypeProto, WALocationMessage, ReconnectMode, WAContextInfo, proto, WAGroupMetadata, ProxyAgent, waChatKey, MimetypeMap, MediaPathMap, WAContactMessage, WAContactsArrayMessage, WAGroupInviteMessage, WATextMessage, WAMessageContent, WAMessage, BaileysError, WA_MESSAGE_STATUS_TYPE, MediaConnInfo, URL_REGEX, WAUrlInfo, WA_DEFAULT_EPHEMERAL, WAMediaUpload, mentionedJid, processTime, Browser, MessageType, Presence, WA_MESSAGE_STUB_TYPES, Mimetype, relayWAMessage, Browsers, GroupSettingChange, DisconnectReason, WASocket, getStream, WAProto, isBaileys, PHONENUMBER_MCC, AnyMessageContent, useMultiFileAuthState, fetchLatestBaileysVersion, templateMessage, InteractiveMessage, Header } = require('@whiskeysockets/baileys')
-const { readSettings, settings, writeSettings } = require('./tylor.js'); 
 const { exec, spawn, execSync } = require("child_process")
 const fs = require('fs')
 const util = require('util')
@@ -74,29 +73,6 @@ const {
     GIFBufferToVideoBuffer,
     totalcase
 } = require('./lib/myfunc')
-
-
-// Assign global variables based on settings
-global.SESSION_ID = settings.SESSION_ID;
-global.botname = settings.botname;
-global.ownernumber = settings.ownernumber;
-global.ownername = settings.ownername;
-global.plink = settings.plink;
-global.wm = settings.wm;
-global.packname = settings.packname;
-global.author = settings.author;
-global.urldb = settings.urldb;
-global.xprefix = settings.xprefix;
-global.hituet = settings.hituet;
-global.autoviewstatus = settings.autoviewstatus === 'true' || false;  // Ensure default false
-global.autoreactstatus = settings.autoreactstatus === 'true' || false;  // Ensure default false
-global.anticall = settings.anticall === 'true' || false;  // Ensure default false
-global.welcome = settings.welcome === 'true' || false;  // Ensure default false
-global.statusemoji = settings.statusemoji;
-global.timezones = settings.timezones;
-global.countrycode = settings.countrycode;
-global.menustyle = settings.menustyle;
-global.mess = settings.mess; 
 
 //error handling
 const errorLog = new Map();
@@ -397,12 +373,6 @@ mimetype: "video/mp4",
   }
 }
 
-
-// Function to update settings dynamically
-async function updateSetting(key, value) {
-    settings[key] = value;
-    writeSettings(settings);
-}
 
 async function Telesticker(url) {
       return new Promise(async (resolve, reject) => {
@@ -976,26 +946,12 @@ ${readmore}
 │□ autorecord
 │□ antiviewonce
 │□ autorecordtype
-│□ autoviewstatus
-│□ autoreactstatus
-│□ setcountrycode
-│□ setbotname
-│□ setownernumber
-│□ setownername
-│□ setpackname
-│□ setauthorname
-│□ settimezone
-│□ setstatusemoji
 │□ request 
 │□ serverip
-│□ resethit 
 │□ resetuser
-│□ setprefix 
 │□ delsession
 │□ getsession 
 │□ reportbug
-│□ anticall
-│□ welcome
 │□ poll
 │□ pin
 │□ unpin
@@ -1619,26 +1575,6 @@ break;
   m.reply(`Private mode enabled successfully`);
 } break;
 //<================================================>//
-case "autostatusview":
-case "autosview":
-case "autoviewstatus":
-case "autoswview": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (args.length < 1) return m.reply(`*Example: ${prefix + command} on/off*`);
-
-    const option = args[0].toLowerCase();
-    if (!["on", "off"].includes(option)) return m.reply("Invalid option");
-
-    // Update settings dynamically
-    await updateSetting('autoviewstatus', option === "on");
-
-    // Update global variable
-    global.autoviewstatus = option === "on";
-
-    m.reply(`*Auto-status view ${option === "on" ? "enabled" : "disabled"} successfully*`);
-}
-break;
 //<================================================>//
 case "mode": {
 if (!isCreator) return m.reply(mess.owner);
@@ -1653,24 +1589,6 @@ db.data.settings[botNumber].public = mode === "public";
 m.reply(mode === "public" ? "Public mode enabled" : "Private mode enabled");
 } break;
 //<================================================>//
-case "autostatusreact":
-case "autoreactstatus": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (args.length < 1) return m.reply(`*Example: ${prefix + command} on/off*`);
-
-    const option = args[0].toLowerCase();
-    if (!["on", "off"].includes(option)) return m.reply("Invalid option");
-
-    // Update settings dynamically
-    await updateSetting('autoreactstatus', option === "on");
-
-    // Update global variable
-    global.autoreactstatus = option === "on";
-
-    m.reply(`*Auto-react status ${option === "on" ? "enabled" : "disabled"} successfully*`);
-}
-break;
 //<================================================>//
 case "modestatus": {
 if (!isCreator) return m.reply(mess.owner);
@@ -1835,22 +1753,6 @@ break;
         }
         break;
 //<================================================>//
-case "setprefix": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} .*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('xprefix', text.trim());
-
-    // Update global variable
-    global.xprefix = text.trim();
-
-    m.reply(`*Prefix successfully changed to ${text.trim()}*`);
-}
-break;
 //<================================================>//
       case "leave":
       case "leavegc":
@@ -5290,233 +5192,7 @@ case "setppgroup": {
   }
 }
 break;
-//<================================================>//
-case "anticall": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (args.length < 1) return m.reply("Example: on/off");
-
-    const option = args[0].toLowerCase();
-    if (option !== "on" && option !== "off") return m.reply("Invalid option");
-
-    // Update settings dynamically
-    await updateSetting('anticall', option === "on");
-
-    // Update global variable
-    global.anticall = option === "on";
-
-    m.reply(`Anti-call ${option === "on" ? "enabled" : "disabled"} successfully`);
-}
-break;
-//<================================================>//
-case "welcome":
-case "left": {
-    if (!m.isGroup) return m.reply(mess.group);
-    if (!isAdmins && !isCreator) return m.reply(mess.notadmin);
-    
-    const option = args[0];
-    if (!option) return m.reply("*on/off?*");
-
-    if (option.toLowerCase() === "on") {
-        // Update settings dynamically
-        await updateSetting('welcome', true);
-
-        // Update global variable
-        global.welcome = true;
-
-        m.reply(`Successfully enabled ${command}`);
-    } else if (option.toLowerCase() === "off") {
-        // Update settings dynamically
-        await updateSetting('welcome', false);
-
-        // Update global variable
-        global.welcome = false;
-
-        m.reply(`Successfully disabled ${command}`);
-    } else {
-        m.reply("Invalid option. Use 'on' or 'off'.");
-    }
-}
-break;
-//<================================================>//
-case "menutype":
-case "setmenu":
-case "menustyle": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    const allowedOptions = ["1", "2", "3", "4", "5"];
-    const example = `Example: ${prefix + command} 1`;
-    
-    if (!text) {
-        return m.reply(`Please select a menu style:\n\n1. Document menu (Android only)\n2. Text only menu (Android & iOS)\n3. Image menu with context (Android & iOS)\n4. Image menu (Android & iOS)\n5. Payment menu\n\n${example}`);
-    }
-    
-    if (allowedOptions.includes(text.trim())) {
-        // Update the menu style in the settings JSON file
-        await updateSetting('menustyle', text.trim());
-
-        // Update the global menu style
-        global.menustyle = text.trim();
-
-        m.reply(mess.done);
-    } else {
-        m.reply(`Invalid option! Please choose a valid number.\n\n${example}`);
-    }
-}
-break;
-//<================================================>//
-case "setcountrycode": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} 254*`);
-    }
-
-    // Trim the '+' sign if it exists
-    let countryCode = text.trim().replace('+', '');
-
-    // Update settings dynamically
-    await updateSetting('countrycode', countryCode);
-
-    // Update global variable
-    global.countrycode = countryCode;
-
-    m.reply(`*Country code successfully changed to ${countryCode}*`);
-}
-break;
-//<================================================>//
-case "setbotname": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} MyBotName*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('botname', text.trim());
-
-    // Update global variable
-    global.botname = text.trim();
-
-    m.reply(`*Bot name successfully changed to ${text.trim()}*`);
-}
-break;
-//<================================================>//
-case "setownernumber": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} 123456789*`);
-    }
-
-    // Function to clean up the phone number
-    function cleanNumber(number) {
-        return number.replace(/[^\d]/g, '');  // Remove any non-digit characters
-    }
-
-    let cleanedNumber = cleanNumber(text.trim());
-
-    // Update settings dynamically
-    await updateSetting('ownernumber', cleanedNumber);
-
-    // Update global variable
-    global.ownernumber = cleanedNumber;
-
-    m.reply(`*Owner number successfully changed to ${cleanedNumber}*`);
-}
-break;
-//<================================================>//
-case "setownername": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} MyOwnerName*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('ownername', text.trim());
-
-    // Update global variable
-    global.ownername = text.trim();
-
-    m.reply(`*Owner name successfully changed to ${text.trim()}*`);
-}
-break;
-//<================================================>//
-case "setpackname": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} MyPackName*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('packname', text.trim());
-
-    // Update global variable
-    global.packname = text.trim();
-
-    m.reply(`*Pack name successfully changed to ${text.trim()}*`);
-}
-break;
-//<================================================>//
-case "setauthorname": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} MyAuthorName*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('authorname', text.trim());
-
-    // Update global variable
-    global.authorname = text.trim();
-
-    m.reply(`*Author name successfully changed to ${text.trim()}*`);
-}
-break;
-//<================================================>//
-case "settimezone": {
-    if (!isCreator) return m.reply(mess.owner);
-
-    if (!text || !text.includes('/')) {
-        return m.reply(`*Example: ${prefix + command} Africa/Nairobi*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('timezones', text.trim());
-
-    // Update global variable
-    global.timezones = text.trim();
-
-    m.reply(`*Timezone successfully changed to ${text.trim()}*`);
-}
-break;
-//<================================================>//
-case "setstatusemoji": {
-    if (!isCreator) return m.reply(mess.owner);
-    
-    if (!text) {
-        return m.reply(`*Example: ${prefix + command} 🙂*`);
-    }
-
-    // Expanded regular expression to check for emojis
-    const emojiRegex = /[\p{Emoji_Presentation}\uFE0F]/u;
-
-    if (!emojiRegex.test(text.trim())) {
-        return m.reply(`*Please provide a valid emoji. Example: ${prefix + command} 🙂*`);
-    }
-
-    // Update settings dynamically
-    await updateSetting('statusemoji', text.trim());
-
-    // Update global variable
-    global.statusemoji = text.trim();
-
-    m.reply(`*Status emoji successfully changed to ${text.trim()}*`);
-}
-break;
+//<================================================>//;
 //<================================================>//
 case "addbadword": {
     if (!isCreator) return m.reply(mess.owner);
