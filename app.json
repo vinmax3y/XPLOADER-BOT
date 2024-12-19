@@ -5,6 +5,7 @@
   "logo": "https://i.ibb.co/0tbxXc0/Xploader5.jpg",
   "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader" ],
   "repository": "https://github.com/Dark-Xploit/XPLOADER-BOT",
+  "stack": "container",
   "scripts": {
     "start": "node index.js"
   },
