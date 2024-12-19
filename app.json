@@ -1,0 +1,96 @@
+{
+  "name": "XPLOADER-BOT",
+  "version": "3.3.0",
+  "description": "Xploader, A modular advanced whatsapp bot",
+  "logo": "https://i.ibb.co/0tbxXc0/Xploader5.jpg",
+  "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader" ],
+  "repository": "https://github.com/Dark-Xploit/XPLOADER-BOT",
+  "stack": "container",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter Xploader session id here; must start with XPLOADER~",
+      "value": "",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Enter your bot name here",
+      "value": "XploaderBot",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter your number here",
+      "value": "254754783972",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here",
+      "value": "Tylor",
+      "required": true
+    },
+    "STICKER_PACK_NAME": {
+      "description": "Sticker pack name",
+      "value": "Xploader",
+      "required": false
+    },
+    "STICKER_AUTHOR_NAME": {
+      "description": "Sticker author name",
+      "value": "Bot",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Enter your desired prefix here",
+      "value": ".",
+      "required": true
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "Set true to enable and false to disable auto status view",
+      "value": "true",
+      "required": false
+    },
+    "AUTO_STATUS_REACT": {
+      "description": "Set true to enable and false to disable auto status reaction",
+      "value": "true",
+      "required": false
+    },
+    "STATUS_EMOJI": {
+      "description": "Status reaction emoji",
+      "value": "🙂",
+      "required": false
+    },
+    "TIMEZONE": {
+      "description": "Enter your timezone here. Google or don't edit if you don't know!",
+      "value": "Africa/Nairobi",
+      "required": false
+    },
+    "COUNTRY_CODE": {
+      "description": "Set your country code for functionality of blockforeign and antiforeign commands",
+      "value": "254",
+      "required": false
+    },
+    "MENU_STYLE": {
+      "description": "Menu style, options 1, 2, 3, 4 or 5",
+      "value": "2",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
