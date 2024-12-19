@@ -96,7 +96,7 @@ global.autoread = process.env.AUTO_READ || 'false';
 
 //=================================================//
 //=================================================//
-global.menustyle = process.env.MENU_STYLE || '1' 
+global.menustyle = process.env.MENU_STYLE || '2' 
 // options 1, 2, 3, 4 or 5
 // 1 = Document menu(Android only)
 // 2 = Text only menu(Android & iOS)
