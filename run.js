@@ -34,17 +34,24 @@ const low = require('./lib/lowdb');
 const yargs = require('yargs/yargs');
 const { Low, JSONFile } = low;
 const PostgreSQL = require('./lib/postgresql');
+const Low = require('lowdb');
+const PostgreSQLAdapter = require('./lib/PostgreSQL1');
+
 const port = process.env.PORT || 3000;
 const opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
 const dbPath = './src/database.json';
 
 let db;
 if (process.env.DATABASE_URL) {
-  db = new PostgreSQL(process.env.DATABASE_URL);
+  const postgresDB = new PostgreSQL(process.env.DATABASE_URL);
+  const adapter = new PostgreSQLAdapter(postgresDB);
+  db = new Low(adapter);
+  
   (async () => {
     try {
       // Create tables
-      await db.query(`
+      await db.adapter.read();
+      await postgresDB.query(`
         CREATE TABLE IF NOT EXISTS users (
           id SERIAL PRIMARY KEY,
           username VARCHAR(255) NOT NULL,
@@ -53,7 +60,7 @@ if (process.env.DATABASE_URL) {
         );
       `);
 
-      await db.query(`
+      await postgresDB.query(`
         CREATE TABLE IF NOT EXISTS chats (
           id SERIAL PRIMARY KEY,
           user_id INTEGER REFERENCES users(id),
@@ -63,18 +70,19 @@ if (process.env.DATABASE_URL) {
       `);
 
       console.log("Database schema created");
-
-      let settings = await db.query("SELECT * FROM users");
+      const settings = await postgresDB.query("SELECT * FROM users");
       console.log("Settings on startup:", settings);
     } catch (error) {
       console.error("Error creating database schema:", error);
     }
   })();
 } else {
-  db = new JSONFile(dbPath);
+  const adapter = new JSONFile(dbPath);
+  db = new Low(adapter);
+
   (async () => {
     try {
-      let settings = await db.read();
+      const settings = await db.read();
       console.log("Settings on startup:", settings);
     } catch (error) {
       console.error("Error during database operations:", error);
