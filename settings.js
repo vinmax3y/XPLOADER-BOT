@@ -53,6 +53,9 @@ global.xprefix = process.env.PREFIX || '.'
 //Set your desired prefix
 
 //=================================================//
+global.mode = process.env.MODE || 'public';
+// Set to 'private' to enable private mode, otherwise default is 'public'
+
 //=================================================//
 global.hituet = 0 
 //=================================================//
@@ -79,6 +82,19 @@ global.timezones = process.env.TIMEZONE || "Africa/Nairobi"
 global.countrycode = process.env.COUNTRY_CODE || '254' 
 //set your country code for functionality of blockforeign and antiforeign commands
 
+//=================================================//
+global.autoblockforeign = process.env.AUTO_BLOCK_FOREIGN || 'false';
+// Set to 'true' to enable automatic blocking of foreign numbers
+
+//=================================================//
+global.gcantiforeign = process.env.GC_ANTI_FOREIGN || 'false';
+// Set to 'true' to enable automatic removal of foreign numbers from groups
+
+//=================================================//
+global.autoread = process.env.AUTO_READ || 'false';
+// Set to 'true' to enable automatic reading of messages
+
+//=================================================//
 //=================================================//
 global.menustyle = process.env.MENU_STYLE || '1' 
 // options 1, 2, 3, 4 or 5

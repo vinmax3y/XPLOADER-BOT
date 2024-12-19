@@ -11,13 +11,13 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter Xploader session id here; must start with XPLOADER~",
+      "description": "Enter your Xploader session id here; must start with XPLOADER~",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
       "description": "Enter your bot name here",
-      "value": "XploaderBot",
+      "value": "𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭",
       "required": false
     },
     "OWNER_NUMBER": {
@@ -40,19 +40,39 @@
       "value": "Bot",
       "required": false
     },
+    "MONGODB_URL": {
+      "description": "Enter your MongoDB URL here or leave blank if you don't have",
+      "value": "",
+      "required": false
+    },
     "PREFIX": {
       "description": "Enter your desired prefix here",
       "value": ".",
       "required": true
     },
+    "MODE": {
+      "description": "Set to 'private' to enable private mode, otherwise default is 'public'",
+      "value": "public",
+      "required": false
+    },
     "AUTO_STATUS_VIEW": {
       "description": "Set true to enable and false to disable auto status view",
-      "value": "true",
+      "value": "false",
       "required": false
     },
     "AUTO_STATUS_REACT": {
       "description": "Set true to enable and false to disable auto status reaction",
-      "value": "true",
+      "value": "false",
+      "required": false
+    },
+    "ANTI_CALL": {
+      "description": "Set true to enable and false to disable anti-call feature",
+      "value": "false",
+      "required": false
+    },
+    "WELCOME_MSG": {
+      "description": "Set true to enable and false to disable welcome messages",
+      "value": "false",
       "required": false
     },
     "STATUS_EMOJI": {
@@ -70,24 +90,24 @@
       "value": "254",
       "required": false
     },
+    "AUTO_BLOCK_FOREIGN": {
+      "description": "Set true to enable automatic blocking of foreign numbers",
+      "value": "false",
+      "required": false
+    },
+    "GC_ANTI_FOREIGN": {
+      "description": "Set true to enable automatic removal of foreign numbers from groups",
+      "value": "false",
+      "required": false
+    },
+    "AUTO_READ": {
+      "description": "Set true to enable automatic reading of messages",
+      "value": "false",
+      "required": false
+    },
     "MENU_STYLE": {
       "description": "Menu style, options 1, 2, 3, 4 or 5",
-      "value": "2",
-      "required": false
-    },
-    "ANTI_CALL": {
-      "description": "Set true to enable and false to disable anti-call feature",
-      "value": "false",
-      "required": false
-    },
-    "WELCOME_MSG": {
-      "description": "Set true to enable and false to disable welcome messages",
-      "value": "false",
-      "required": false
-    },
-    "MONGODB_URL": {
-      "description": "Enter your MongoDB URL here",
-      "value": "",
+      "value": "1",
       "required": false
     }
   },

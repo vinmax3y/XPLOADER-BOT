@@ -522,35 +522,13 @@ let ppUrl = await Xploader.profilePictureUrl(m.sender, 'image').catch(_ => 'http
       if (typeof chats !== "object") global.db.data.chats[from] = {};
       if (chats) {
         if (!("badword" in chats)) chats.badword = false;
-        if (!("antiforeignnum" in chats)) chats.antiforeignnum = false;
         if (!("antibot" in chats)) chats.antibot = false;
-        if (!("antimedia" in chats)) chats.media = false;
-        if (!("antivirtex" in chats)) chats.antivirtex = false;
-        if (!("antiimage" in chats)) chats.antiimage = false;
-        if (!("antivideo" in chats)) chats.video = false;
-        if (!("antiaudio" in chats)) chats.antiaudio = false;
-        if (!("antipoll" in chats)) chats.antipoll = false;
-        if (!("antisticker" in chats)) chats.antisticker = false;
-        if (!("anticontact" in chats)) chats.anticontact = false;
-        if (!("antilocation" in chats)) chats.antilocation = false;
-        if (!("antidocument" in chats)) chats.antidocument = false;
         if (!("antilink" in chats)) chats.antilink = false;
         if (!("antilinkgc" in chats)) chats.antilinkgc = false;
       } else
         global.db.data.chats[from] = {
           badword: false,
-          antiforeignnum: false,
           antibot: false,
-          antivirtex: false,
-          antimedia: false,
-          antiimage: false,
-          antivideo: false,
-          antiaudio: false,
-          antipoll: false,
-          antisticker: false,
-          antilocation: false,
-          antidocument: false,
-          anticontact: false,
           antilink: false,
           antilinkgc: false,
         };
@@ -560,19 +538,10 @@ let ppUrl = await Xploader.profilePictureUrl(m.sender, 'image').catch(_ => 'http
       if (setting) {
         if (!("unavailable" in setting)) setting.unavailable = false;
         if (!("autobio" in setting)) setting.autobio = false;
-        if (!("antispam" in setting)) setting.antispam = false;
-        if (!('autoswview' in setting)) setting.autoswview = false;
-        if (!("autoread" in setting)) setting.autoread = false;
         if (!("public" in setting)) setting.public = true;
         if (!("autorecordtype" in setting)) setting.autorecordtype = false;
         if (!("autorecord" in setting)) setting.autorecord = false;
         if (!("autotype" in setting)) setting.autotype = false;
-        if (!("antidelete" in setting)) setting.antidelete = false;
-        if (!('welcome' in setting)) setting.welcome = false
-       if (!("antiviewonce" in setting)) setting.antiviewonce = false;
-        if (!("autoblocknum" in setting)) setting.autoblocknum = false;
-        if (!("onlygroup" in setting)) setting.onlygroup = false;
-        if (!("onlypc" in setting)) setting.onlypc = false;
         if (!("watermark" in setting)) setting.watermark = { packname, author };
         if (!("about" in setting))
           setting.about = {
@@ -588,14 +557,8 @@ let ppUrl = await Xploader.profilePictureUrl(m.sender, 'image').catch(_ => 'http
         global.db.data.settings[botNumber] = {
           unavailable: false,
           autobio: false,
-          antispam: false,
-          autoswview: false,
           autoread: false,
           public: true,
-          autoblocknum: false,
-          onlygroup: false,
-          onlypc: false,
-          antidelete: false,
           antiviewonce: false,
           autorecordtype: false,
           autorecord: false,
@@ -778,9 +741,10 @@ if (
         Xploader.sendPresenceUpdate("unavailable", from);
       }
     }
-    if (db.data.settings[botNumber].autoread) {
-      Xploader.readMessages([m.key]);
-    }
+//=================================================//
+if (global.autoread === 'true') {
+  Xploader.readMessages([m.key]);
+}
 //<================================================>//
 if ((budy.match) && ["Assalamualaikum", "assalamualaikum", "Assalamu'alaikum",].includes(budy)) {
 let urel = `https://pomf2.lain.la/f/7ixvc40h.mp3`
@@ -793,34 +757,20 @@ var pick = pickRandom(stik)
 Xploader.sendImageAsSticker(m.chat, pick.url, m, { packname: global.packname, author: global.author })
 }
 //<================================================>//
-if (
-  !m.sender.startsWith(global.countrycode) &&
-  db.data.chats[m.chat].antiforeignnum === true
-) {
+if (!m.sender.startsWith(global.countrycode) && global.gcantiforeign === 'true') {
   if (isCreator || isAdmins || !isBotAdmins) return;
-  Xploader.sendMessage(
-    m.chat,
-    {
-      text: `*FOREIGN NUMBER DETECTED*\n\n Only +${global.countrycode} users are allowed to join the group.`,
-    },
-    { quoted: m }
-  );
+  Xploader.sendMessage(m.chat, {
+    text: `*FOREIGN NUMBER DETECTED*\n\nOnly +${global.countrycode} users are allowed to join the group.`,
+  }, { quoted: m });
   await sleep(2000);
   await Xploader.groupParticipantsUpdate(m.chat, [m.sender], "remove");
 }
 //<================================================>//
-if (
-  !m.sender.startsWith(`${global.countrycode}`) &&
-  db.data.settings[botNumber].autoblocknum === true
-) {
+if (!m.sender.startsWith(`${global.countrycode}`) && global.autoblockforeign === 'true') {
   if (isCreator || isAdmins || !isBotAdmins) return;
-  Xploader.sendMessage(
-    m.chat,
-    {
-      text: `*FOREIGN NUMBER DETECTED*\n\nSorry, but my owner has enabled a strict policy to block foreign numbers. Only users with country code +${global.countrycode} are allowed.`,
-    },
-    { quoted: m }
-  );
+  Xploader.sendMessage(m.chat, {
+    text: `*FOREIGN NUMBER DETECTED*\n\nSorry, but my owner has enabled a strict policy to block foreign numbers. Only users with country code +${global.countrycode} are allowed.`,
+  }, { quoted: m });
   await sleep(2000);
   return Xploader.updateBlockStatus(m.sender, "block");
 }
@@ -828,13 +778,12 @@ if (
 //<================================================>// 
 //=================================================//
 //<================================================>//
-Xploader.public = db.data.settings[botNumber].public;
-    if (!Xploader.public) {
-      if (isCreator && !m.key.fromMe) return;
-    }
+if (global.mode === 'private') {
+  if (isCreator && !m.key.fromMe) return;
+}
 //<================================================// 
 //mode checker
-const modeStatus = db.data.settings[botNumber].public ? "Public" : "Private";  
+const modeStatus = global.mode === 'public' ? "Public" : "Private";
     
 //================== [ FAKE REPLY ] ==================//
 const fkontak = {
@@ -913,7 +862,7 @@ case "menu":
 ┃ *ᴏᴡɴᴇʀ* :  ${ownername}
 ┃ *ᴘʀᴇғɪx* :  [ ${xprefix} ]
 ┃ *ʜᴏsᴛ* : ${os.platform()}
-┃ *ᴘʟᴜɢɪɴs* : 395
+┃ *ᴘʟᴜɢɪɴs* : 367
 ┃ *ᴍᴏᴅᴇ* : ${modeStatus}
 ┃ *ᴠᴇʀsɪᴏɴ* : ${versions}
 ┃ *sᴘᴇᴇᴅ* :  ${latensie.toFixed(4)} ms
@@ -921,9 +870,6 @@ case "menu":
 ┗▣ 
 ${readmore}
 ┏▣ ◊ 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ◊
-│□ mode
-│□ public
-│□ private
 │□ available
 │□ vv
 │□ tovv
@@ -941,7 +887,6 @@ ${readmore}
 │□ botstatus
 │□ modestatus 
 │□ autobio
-│□ autoread
 │□ autotype
 │□ autorecord
 │□ antiviewonce
@@ -965,7 +910,6 @@ ${readmore}
 │□ disappearingmsg
 │□ setprofilepic
 │□ setbio
-│□ blockforeign
 │□ addbadword 
 │□ delbadword 
 │□ listbadword
@@ -997,7 +941,6 @@ ${readmore}
 │□ antibadword
 │□ listonline 
 │□ editsettings
-│□ antiforeign
 │□ setppgroup
 │□ delppgroup
 ┗▣
@@ -1473,19 +1416,6 @@ case "p": {
 }
 break;
 //<================================================>//
-case "autoread": {
-  if (!isCreator) return m.reply(mess.owner);
-  if (args.length < 1) return m.reply(`Example: ${prefix + command} on/off`);
-
-  const validOptions = ["on", "off"];
-  const option = args[0].toLowerCase();
-
-  if (!validOptions.includes(option)) return m.reply("Invalid option");
-
-  db.data.settings[botNumber].autoread = option === "on";
-  m.reply(`Auto-read ${option === "on" ? "enabled" : "disabled"} successfully`);
-}
-break;
 //<================================================>//
 case "available": {
   if (!isCreator) return m.reply(mess.owner);
@@ -1559,36 +1489,6 @@ db.data.settings[botNumber].autobio = option === "on";
 m.reply(`Auto-bio ${option === "on" ? "enabled" : "disabled"} successfully`);
 }
 break;
-//<================================================>//
-      case "public":
-        {
-          if (!isCreator) return m.reply(mess.owner);
- db.data.settings[botNumber].public = true;
-  m.reply(`Public mode enabled successfully`);
-} break;
-//<================================================>//
-      case "private":
-      case "self":
-        {
-          if (!isCreator) return m.reply(mess.owner);
- db.data.settings[botNumber].public = false;
-  m.reply(`Private mode enabled successfully`);
-} break;
-//<================================================>//
-//<================================================>//
-case "mode": {
-if (!isCreator) return m.reply(mess.owner);
-if (args.length < 1) return m.reply(`Example: ${prefix + command} public/private`);
-
-const validModes = ["public", "private"];
-const mode = args[0].toLowerCase();
-
-if (!validModes.includes(mode)) return m.reply("Invalid mode");
-
-db.data.settings[botNumber].public = mode === "public";
-m.reply(mode === "public" ? "Public mode enabled" : "Private mode enabled");
-} break;
-//<================================================>//
 //<================================================>//
 case "modestatus": {
 if (!isCreator) return m.reply(mess.owner);
@@ -5117,31 +5017,6 @@ case "editinfo":
         }
         break;
 //<================================================>//
-case "blockforeign": {
-  if (!isCreator) return m.reply(mess.owner);
-  if (args.length < 1) return m.reply(`Example: ${prefix + command} on/off`);
-
-  const option = args[0].toLowerCase();
-  if (option !== "on" && option !== "off") return m.reply("Invalid option");
-
-  db.data.settings[botNumber].autoblocknum = option === "on";
-  m.reply(`Block foreign numbers ${option === "on" ? "enabled" : "disabled"} successfully.`);
-}
-break;
-//<================================================>//
-case "antiforeign": {
-  if (!m.isGroup) return m.reply(mess.group);
-  if (!isBotAdmins) return m.reply(mess.admin);
-  if (!isAdmins && !isCreator) return m.reply(mess.notadmin);
-  if (args.length < 1) return m.reply("*on or off?*");
-
-  const option = args[0].toLowerCase();
-  if (option !== "on" && option !== "off") return m.reply("Invalid option");
-
-  db.data.chats[m.chat].antiforeignnum = option === "on";
-  m.reply(`*Successfully ${option === "on" ? "enabled" : "disabled"} ${command}*`);
-}
-break;
 //<================================================>//
 case "delppgroup": {
   if (!m.isGroup) return m.reply(mess.group);
