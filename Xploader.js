@@ -779,7 +779,7 @@ if (!m.sender.startsWith(`${global.countrycode}`) && global.autoblockforeign ===
 //=================================================//
 //<================================================>//
 if (global.mode === 'private') {
-  if (isCreator && !m.key.fromMe) return;
+  if (!isCreator && !m.key.fromMe) return;
 }
 //<================================================// 
 //mode checker
@@ -1707,7 +1707,8 @@ db.data.settings[botNumber].antiviewonce = status === "on";
 m.reply(`Anti-viewonce ${status === "on" ? "enabled" : "disabled"} successfully`);
 } break;
 //<================================================>//
-case "vv": {
+case "vv": 
+case "rvo": {
 if (!isCreator) return m.reply(mess.owner);
 if (!m.quoted) return m.reply(`*Please reply to a viewonce message!*`)
         if (m.quoted.mtype !== 'viewOnceMessageV2') return m.reply(`*Is that a viewonce message?*`)
