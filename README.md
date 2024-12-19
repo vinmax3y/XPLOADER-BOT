@@ -43,26 +43,15 @@
     <p align="center">
 <a href='https://github.com/Dark-Xploit/XPLOADER-BOT/fork' target="_blank"><img alt='Fork Repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue'/></a>
 
-2. SESSION ID (SERVER 1)
+2. GET SESSION
     <br>
     <p align="center">
-<a href='https://xploaderpair-7daff92659fb.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
+<a href='https://xploader-deploy-9623bcd2cad7.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
 
-
-3. SESSION ID (SERVER 2)
-    <br>
-    <p align="center">
-<a href='https://xploader-pair.onrender.com' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=darkred'/></a>
-
-
-4. SESSION FILE (SERVER 3)
-    <br>
-    <p align="center">
-<a href='https://session.bk9.site/code2/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkbrown&color=darkbrown'/></a>
 
 ## `DEPLOYMENTS`
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dark-Xploit/XPLOADER-BOT/)  💯 safe
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://xploader-deploy-9623bcd2cad7.herokuapp.com/deploy)  💯 safe
     
 
 [![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
