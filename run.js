@@ -33,92 +33,43 @@ const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream
 const low = require('./lib/lowdb');
 const yargs = require('yargs/yargs');
 const { Low, JSONFile } = low;
-const PostgreSQL = require('./lib/postgresql');
-const Low = require('lowdb');
-const PostgreSQLAdapter = require('./lib/PostgreSQL1');
-
+const mongoDB = require('./lib/mongoDB');
 const port = process.env.PORT || 3000;
+
 const opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
 const dbPath = './src/database.json';
 
 let db;
-if (process.env.DATABASE_URL) {
-  const postgresDB = new PostgreSQL(process.env.DATABASE_URL);
-  const adapter = new PostgreSQLAdapter(postgresDB);
-  db = new Low(adapter);
-  
-  (async () => {
-    try {
-      // Create tables
-      await db.adapter.read();
-      await postgresDB.query(`
-        CREATE TABLE IF NOT EXISTS users (
-          id SERIAL PRIMARY KEY,
-          username VARCHAR(255) NOT NULL,
-          session_id VARCHAR(255) NOT NULL,
-          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-      `);
-
-      await postgresDB.query(`
-        CREATE TABLE IF NOT EXISTS chats (
-          id SERIAL PRIMARY KEY,
-          user_id INTEGER REFERENCES users(id),
-          message TEXT NOT NULL,
-          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-      `);
-
-      console.log("Database schema created");
-      const settings = await postgresDB.query("SELECT * FROM users");
-      console.log("Settings on startup:", settings);
-    } catch (error) {
-      console.error("Error creating database schema:", error);
-    }
-  })();
+if (urldb !== '') {
+db = new mongoDB(urldb);
 } else {
-  const adapter = new JSONFile(dbPath);
-  db = new Low(adapter);
-
-  (async () => {
-    try {
-      const settings = await db.read();
-      console.log("Settings on startup:", settings);
-    } catch (error) {
-      console.error("Error during database operations:", error);
-    }
-  })();
+db = new JSONFile(dbPath);
 }
 
 global.db = new Low(db);
 global.DATABASE = global.db;
 
 global.loadDatabase = async function loadDatabase() {
-  if (global.db.READ) {
-    return new Promise((resolve) => setInterval(function () {
-      if (!global.db.READ) {
-        clearInterval(this);
-        resolve(global.db.data == null ? global.loadDatabase() : global.db.data);
-      }
-    }, 1000));
-  }
-  if (global.db.data !== null) return;
-  global.db.READ = true;
-  await global.db.read();
-  global.db.READ = false;
-  global.db.data = {
-    users: {},
-    chats: {},
-    database: {},
-    groups: {},
-    game: {},
-    settings: {},
-    others: {},
-    sticker: {},
-    ...(global.db.data || {}),
-  };
-  global.db.chain = _.chain(global.db.data);
+if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000));
+if (global.db.data !== null) return;
+
+global.db.READ = true;
+await global.db.read();
+global.db.READ = false;
+
+global.db.data = {
+  users: {},
+  chats: {},
+  database: {},
+  groups: {},
+  game: {},
+  settings: {},
+  others: {},
+  sticker: {},
+  ...(global.db.data || {})
 };
+
+global.db.chain = _.chain(global.db.data);
 
 global.loadDatabase();
 
@@ -128,8 +79,7 @@ if (global.db) {
   setInterval(async () => {
     if (global.db.data) await global.db.write();
   }, 30 * 1000); // Save database every 30 seconds
-}
-
+}}
 
 function createTmpFolder() {
 const folderName = "tmp";
