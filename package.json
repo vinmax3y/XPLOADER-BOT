@@ -5,7 +5,7 @@
   "main": "run.js",
   "engines": {
       "node": ">= 21.x",
-      "npm": ">= 11.x"
+      "npm": ">= 10.x"
    },
   "scripts": {
     "start": "node index.js"
