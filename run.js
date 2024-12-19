@@ -35,48 +35,69 @@ const yargs = require('yargs/yargs');
 const { Low, JSONFile } = low;
 const PostgreSQL = require('./lib/postgresql');
 const port = process.env.PORT || 3000;
-
 const opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
 const dbPath = './src/database.json';
 
 let db;
-if (urldb !== '') {
-  db = new PostgreSQL(urldb);
+if (process.env.DATABASE_URL) {
+  db = new PostgreSQL(process.env.DATABASE_URL);
+  (async () => {
+    try {
+      // Create tables
+      await db.query(`
+        CREATE TABLE IF NOT EXISTS users (
+          id SERIAL PRIMARY KEY,
+          username VARCHAR(255) NOT NULL,
+          session_id VARCHAR(255) NOT NULL,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+      `);
+
+      await db.query(`
+        CREATE TABLE IF NOT EXISTS chats (
+          id SERIAL PRIMARY KEY,
+          user_id INTEGER REFERENCES users(id),
+          message TEXT NOT NULL,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+      `);
+
+      console.log("Database schema created");
+
+      let settings = await db.query("SELECT * FROM users");
+      console.log("Settings on startup:", settings);
+    } catch (error) {
+      console.error("Error creating database schema:", error);
+    }
+  })();
 } else {
   db = new JSONFile(dbPath);
+  (async () => {
+    try {
+      let settings = await db.read();
+      console.log("Settings on startup:", settings);
+    } catch (error) {
+      console.error("Error during database operations:", error);
+    }
+  })();
 }
-
-(async () => {
-  try {
-    let settings = await db.read();
-    console.log("Settings on startup:", settings);
-    // Modify settings as needed and write back to the database
-    // await db.write(settings);
-  } catch (error) {
-    console.error("Error during database operations:", error);
-  }
-})();
 
 global.db = new Low(db);
 global.DATABASE = global.db;
 
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) {
-    return new Promise((resolve) =>
-      setInterval(function () {
-        if (!global.db.READ) {
-          clearInterval(this);
-          resolve(global.db.data == null ? global.loadDatabase() : global.db.data);
-        }
-      }, 1000)
-    );
+    return new Promise((resolve) => setInterval(function () {
+      if (!global.db.READ) {
+        clearInterval(this);
+        resolve(global.db.data == null ? global.loadDatabase() : global.db.data);
+      }
+    }, 1000));
   }
   if (global.db.data !== null) return;
-
   global.db.READ = true;
   await global.db.read();
   global.db.READ = false;
-
   global.db.data = {
     users: {},
     chats: {},
@@ -88,7 +109,6 @@ global.loadDatabase = async function loadDatabase() {
     sticker: {},
     ...(global.db.data || {}),
   };
-
   global.db.chain = _.chain(global.db.data);
 };
 
