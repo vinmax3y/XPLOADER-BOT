@@ -1,8 +1,5 @@
-## MAINTENANCE IN PROGRESS, BE CAREFUL WHEN DEOLOYING
-
-
 <h1 align="center"> 𝐗𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓 </h1>
-<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.2.6 </h1>
+<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.3.0 </h1>
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
@@ -38,18 +35,6 @@
 </p>
 <p align='center'>
 </p>
-
-
-
-
-
-# NB:
-*If you're experiencing sleeping problems on panels, go to `Startup` then change `bot js file` from `index.js` to `start.js` then restart the bot, or you can simply just use session id and `start.js` as the bot js file*
-
-<a href="https://ibb.co/b6pJgdt"><img src="https://i.ibb.co/RgLypH8/IMG-20241124-170538.jpg" alt="IMG-20241124-170538" border="0"></a>
-
-
-<a href="https://ibb.co/tmkV1QK"><img src="https://i.ibb.co/7Y8s0jC/IMG-20241124-170618.jpg" alt="IMG-20241124-170618" border="0"></a>
 
   
 ## 🛠️ `XPLOADER INSTALATION`
