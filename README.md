@@ -46,12 +46,12 @@
 2. GET SESSION
     <br>
     <p align="center">
-<a href='https://xploader-deploy-9623bcd2cad7.herokuapp.com/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=red'/></a>
+<a href='https://xploaderbots.us.kg/' target="_blank"><img alt='REQUEST PAIR CODE' src='https://img.shields.io/badge/Pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkred&color=red'/></a>
 
 
 ## `DEPLOYMENTS`
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://xploader-deploy-9623bcd2cad7.herokuapp.com/deploy)  💯 safe
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://xploaderbots.us.kg/deploy)  💯 safe
     
 
 [![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
