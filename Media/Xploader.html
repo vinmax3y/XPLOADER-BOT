@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XPLOADER BOT STATUS</title>
     <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-image: url("https://i.ibb.co/sCPxkmf/IMG-20241113-064731.jpg"); /* Set the background image */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-    }
-    
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://i.ibb.co/bFWtkv0/1734465645315.jpg"); /* Set the background image */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Arial', 'Helvetica', sans-serif; /* Fallback fonts */
+        }
         .status {
-            font-size: 36px;
+            font-size: 4vw; /* Responsive font size */
             font-weight: bold;
             color: black; /* Text color */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -27,49 +27,45 @@
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: moveRotate 4s linear infinite;
+            text-align: center;
+            margin: 10px;
+        }
+        .loading-spinner {
+            display: none;
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: white;
         }
 
-        @keyframes moveRotate {
-            0% {
-                top: 0;
-                left: 0;
-                transform: rotate(0deg);
-            }
-            25% {
-                top: 0;
-                left: calc(100% - 300px);
-                transform: rotate(90deg);
-            }
-            50% {
-                top: calc(100% - 100px);
-                left: calc(100% - 300px);
-                transform: rotate(180deg);
-            }
-            75% {
-                top: calc(100% - 100px);
-                left: 0;
-                transform: rotate(270deg);
-            }
-            100% {
-                top: 0;
-                left: 0;
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes backgroundGradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            100% {
-                background-position: 100% 50%;
-            }
+        .loading-spinner.active {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="status">XPLOADER BOT IS ACTIVE</div>
+    <div class="loading-spinner" id="loadingSpinner">
+        <i class="fas fa-spinner fa-spin"></i> Loading...
+    </div>
+    <div class="status">XPLOADER UPTIME</div>
+    <div id="uptime" class="status"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const spinner = document.getElementById("loadingSpinner");
+            const uptimeDiv = document.getElementById("uptime");
+            spinner.classList.add("active");
+            setTimeout(() => {
+                spinner.classList.remove("active");
+                fetch('/uptime')
+                    .then(response => response.json())
+                    .then(data => {
+                        uptimeDiv.textContent = data.uptime;
+                    })
+                    .catch(error => console.error('Error fetching uptime:', error));
+            }, 3000); // Simulate loading time
+        });
+    </script>
 </body>
 </html>
