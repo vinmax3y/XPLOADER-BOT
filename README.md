@@ -1,5 +1,5 @@
 <h1 align="center"> 𝐗𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓 </h1>
-<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.3.0 </h1>
+<h1 align="center"> 𝖵𝖤𝖱𝖲𝖨𝖮𝖭 3.3.1 </h1>
 
 <p align="center">
   <a href="https://github.com/Dark-Xploit/XPLOADER-BOT">
