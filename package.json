@@ -1,6 +1,6 @@
 {
   "name": "XPLOADER-BOT",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "The best Whatsapp bot",
   "main": "run.js",
   "engines": {
