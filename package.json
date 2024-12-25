@@ -13,7 +13,7 @@
   "author": "Tylor",
   "license": "MIT",
   "dependencies": {
-        "@whiskeysockets/baileys": "git+ssh://git@github.com/nstar-y/Bail.git#e8cd6970bc65b005d694d0a1a2efa6daf5eed9f5",
+        "@whiskeysockets/baileys": "github:nstar-y/Bail",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@hapi/boom": "^10.0.1",
