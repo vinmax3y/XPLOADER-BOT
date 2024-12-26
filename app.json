@@ -1,6 +1,6 @@
 {
   "name": "XPLOADER-BOT",
-  "version": "3.3.0",
+  "version": "3.3.2",
   "description": "Xploader, A modular advanced WhatsApp bot",
   "logo": "https://i.ibb.co/0tbxXc0/Xploader5.jpg",
   "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader"],
@@ -40,8 +40,13 @@
       "value": "Bot",
       "required": false
     },
-    "MONGODB_URL": {
-      "description": "Enter your MongoDB URL here or leave blank if you don't have",
+    "HEROKU_API_KEY": {
+      "description": "Enter heroku API key here",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_NAME": {
+      "description": "Enter exactly the same app name you've entered above.",
       "value": "",
       "required": false
     },
@@ -57,12 +62,12 @@
     },
     "AUTO_STATUS_VIEW": {
       "description": "Set true to enable and false to disable auto status view",
-      "value": "false",
+      "value": "true",
       "required": false
     },
     "AUTO_STATUS_REACT": {
       "description": "Set true to enable and false to disable auto status reaction",
-      "value": "false",
+      "value": "true",
       "required": false
     },
     "ANTI_CALL": {
@@ -77,7 +82,7 @@
     },
     "STATUS_EMOJI": {
       "description": "Status reaction emoji",
-      "value": "🧡",
+      "value": "🙂",
       "required": false
     },
     "TIMEZONE": {

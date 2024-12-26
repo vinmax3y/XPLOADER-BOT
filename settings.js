@@ -3,7 +3,7 @@
 // @youtube : https://www.youtube.com/@heyits_tylor
 // @instagram : heyits_tylor
 // @telegram : t.me/heyits_tylor
-// @github : heyit-tylor
+// @github : Dark-Xploit
 // @tiktok : heyits_tylor
 // @whatsapp : +254754783972
 //*
@@ -59,10 +59,10 @@ global.mode = process.env.MODE || 'public';
 //=================================================//
 global.hituet = 0 
 //=================================================//
-global.autoviewstatus = process.env.AUTO_STATUS_VIEW || 'false'
+global.autoviewstatus = process.env.AUTO_STATUS_VIEW || 'true'
 
 //=================================================//
-global.autostatusreact = process.env.AUTO_STATUS_REACT || 'false'
+global.autostatusreact = process.env.AUTO_STATUS_REACT || 'true'
 
 //=================================================//
 global.anticall = process.env.ANTI_CALL || 'false'
@@ -71,7 +71,7 @@ global.anticall = process.env.ANTI_CALL || 'false'
 global.welcome = process.env.WELCOME_MSG || 'false'
 
 //=================================================//
-global.statusemoji = process.env.STATUS_EMOJI || '🧡'
+global.statusemoji = process.env.STATUS_EMOJI || '🙂'
 //Set the emoji that you want to be reacted to status
 
 //=================================================//
