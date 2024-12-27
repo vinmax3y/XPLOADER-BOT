@@ -112,7 +112,7 @@
     },
     "MENU_STYLE": {
       "description": "Menu style, options 1, 2, 3, 4 or 5",
-      "value": "1",
+      "value": "2",
       "required": false
     }
   },
