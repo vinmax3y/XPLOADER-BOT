@@ -45,7 +45,7 @@
       "value": "",
       "required": false
     },
-    "HEROKU_API_NAME": {
+    "HEROKU_APP_NAME": {
       "description": "Enter exactly the same app name you've entered above.",
       "value": "",
       "required": false
