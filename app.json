@@ -1,9 +1,9 @@
 {
   "name": "XPLOADER-BOT",
   "version": "3.3.3",
-  "description": "Xploader, A modular advanced WhatsApp bot",
+  "description": "Xploader, the best WhatsApp Bot",
   "logo": "https://i.ibb.co/0tbxXc0/Xploader5.jpg",
-  "keywords": ["whatsapp", "bot", "md", "multi-device", "Xploader"],
+  "keywords": ["whatsapp", "bot", "md"],
   "repository": "https://github.com/Dark-Xploit/XPLOADER-BOT",
   "stack": "container",
   "scripts": {

@@ -62,7 +62,7 @@ global.hituet = 0
 global.autoviewstatus = process.env.AUTO_STATUS_VIEW || 'true'
 
 //=================================================//
-global.autostatusreact = process.env.AUTO_STATUS_REACT || 'true'
+global.autoreactstatus = process.env.AUTO_STATUS_REACT || 'true'
 
 //=================================================//
 global.anticall = process.env.ANTI_CALL || 'false'
