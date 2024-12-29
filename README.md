@@ -51,7 +51,9 @@
 
 ## `DEPLOYMENTS`
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://xploaderbots.us.kg/deploy)  💯 safe
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://xploaderbots.us.kg/deploy)  
+
+💯 safe
     
 
 [![Deploy on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://repl.it/github/Dark-Xploit/XPLOADER-BOT)
