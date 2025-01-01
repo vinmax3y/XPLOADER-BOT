@@ -17,7 +17,7 @@
     },
     "BOT_NAME": {
       "description": "Enter your bot name here",
-      "value": "𝐗𝐩𝐥𝐨𝐚𝐝𝐞𝐫𝐁𝐨𝐭",
+      "value": "᙭ᑭᒪOᗩᗪᗴᖇ ᗷOT",
       "required": false
     },
     "OWNER_NUMBER": {
@@ -32,12 +32,12 @@
     },
     "STICKER_PACK_NAME": {
       "description": "Sticker pack name",
-      "value": "Xploader",
+      "value": "᙭ᑭᒪOᗩᗪᗴᖇ",
       "required": false
     },
     "STICKER_AUTHOR_NAME": {
       "description": "Sticker author name",
-      "value": "Bot",
+      "value": "ᗷOT",
       "required": false
     },
     "HEROKU_API_KEY": {
